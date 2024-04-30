@@ -10,22 +10,48 @@
     <script>
 
         // functions declerations
-        function  greet(name) {
-            console.log("Hello " + name);
-        }
+        // function  greet(name) {
+        //     console.log("Hello " + name);
+        // }
        // greet("ali");
 
         // sum function
-        function sum(v1, v2) {
-            let result = v1 + v2;
+        // function sum(v1, v2) {
+        //     let result = v1 + v2;
+        //     return result;
+        // }
+
+        // let sumResult = sum(8, 5);
+        // let sumResult2 = sum(5, 5);
+
+        // console.log(sumResult);
+        // console.log(sumResult2);
+
+        // // c convert f
+        function convertToForeign(degree){
+            let result = (degree * 9/5) + 32;
             return result;
         }
 
-        let sumResult = sum(8, 5);
-        let sumResult2 = sum(5, 5);
+        // let foreign = convertToForeign(25);
+        //console.log(foreign);
 
-        console.log(sumResult);
-        console.log(sumResult2);
+
+
+        // promts
+        let value1 = prompt("Write temperature into degree");
+        let value255 = prompt("Write temperature into degree");
+        
+        // type casting -> convert data type to other data type
+        console.log(typeof value1);
+
+        let numValue1 = Number(value1);
+
+        console.log(typeof numValue1)
+
+        let foreign = convertToForeign(numValue1);
+        console.log(foreign + " F")
+
 
     </script>
 </body>
