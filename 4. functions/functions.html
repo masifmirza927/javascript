@@ -39,19 +39,31 @@
 
 
         // promts
-        let value1 = prompt("Write temperature into degree");
-        let value255 = prompt("Write temperature into degree");
+        // let value1 = prompt("Write temperature into degree");
+        // let value255 = prompt("Write temperature into degree");
         
-        // type casting -> convert data type to other data type
-        console.log(typeof value1);
+        // // type casting -> convert data type to other data type
+        // console.log(typeof value1);
 
-        let numValue1 = Number(value1);
+        // let numValue1 = Number(value1);
 
-        console.log(typeof numValue1)
+        // console.log(typeof numValue1)
 
-        let foreign = convertToForeign(numValue1);
-        console.log(foreign + " F")
+        // let foreign = convertToForeign(numValue1);
+        // console.log(foreign + " F")
 
+// default parameters of function
+        function multiply(x, y, z=null) {
+            if(z === null) {
+                return x * y;
+            } else {
+                return x * y * z;
+            }
+           
+        };
+
+        let m = multiply(5, 2, null);
+        console.log(m)
 
     </script>
 </body>
