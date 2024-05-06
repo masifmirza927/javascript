@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events cbs dom</title>
+</head>
+<body>
+    <input type="number" id="val" placeholder="write bg color name" />
+    <button id="btn">Click Me</button>
+    <h1 id="heading">Result: </h1>
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        let head = document.getElementById("heading");
+        btn.style.backgroundColor = "red";
+        
+        // add event listener
+        btn.addEventListener('click', function() {
+            // taking input value
+            let input = document.getElementById('val').value;
+            console.log(typeof input);
+            // convert into number or int
+            // Number()
+            // parseInt()
+            
+            head.innerHTML = input;
+            document.body.style.backgroundColor = input;
+        });
+
+        // function call backs
+        // function multiply (v) {
+        //     alert(v * 5);
+        // }
+        // function sum(v1, v2, cb) {
+        //     let result = v1 + v2;
+        //     cb(result);
+        // }
+
+        // sum(4, 2, multiply);
+
+
+    </script>
+</body>
+</html>
